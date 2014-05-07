@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{page.title}} | jpederson.com</title>
+
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='width=device-width; initial-scale=1' />
+
+  <link rel='alternate' type='application/rss+xml' title='RSS' href='/blog.rss' />
+
+  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+  <link href='/css/main.css' rel='stylesheet' />
+</head>
+<body>
+  <header>
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo.png" class="logo"></a>
+    {{ if page.photo_large != '' }}
+      <img src="{{ page.photo_large }}" class="large">
+    {{ else }}
+      <img src="{{ page.photo_medium }}" class="large">
+    {{ endif }}
+    <h1 class='title'>{{page.title}}</a></h1>
+  </header>
+  <article class="content">
+    {{content}}
+  </div>
+  <script src='{{ site.baseurl }}/js/main.js'></script>
+</body>

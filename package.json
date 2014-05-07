@@ -1,0 +1,12 @@
+{
+    "name" : "jpederson",
+    "version" : "1.0.0",
+    "devDependencies" : {
+        "grunt" :                       "latest",
+        "grunt-contrib-sass":           "*",
+        "grunt-autoprefixer":           "*",
+        "grunt-contrib-uglify":         "*",
+        "grunt-contrib-watch":          "*",
+        "matchdep":                     "*"
+    }
+}

@@ -1,0 +1,12 @@
+
+# set the base URL to root
+baseurl: 
+
+# pretty URLs
+permalink: pretty
+
+# set up a port number for the local server
+port: 4000;
+
+# exclude some irrelevant folders and files
+exclude: [ 'src', 'README.md', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json' ]

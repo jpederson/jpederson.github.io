@@ -1,0 +1,17 @@
+
+@import url(//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,600italic,800italic,300,800,600);
+
+@mixin font-headline {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+}
+
+@mixin font-light {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+@mixin font-reading {
+	font-family: "Lora", "Georgia", serif;
+	font-weight: 400;
+}

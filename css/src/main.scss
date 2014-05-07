@@ -1,0 +1,67 @@
+
+@import "reset";
+
+@import "mixins";
+
+@import "fonts";
+
+body {
+	@include font-reading;
+	color: #555;
+	font-size: 14px;
+	line-height: 19px;
+
+	@include respond-to( 768px ) {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.1em;
+}
+
+header {
+	position: relative;
+	@include clearfix;
+
+	img.logo {
+		position: absolute;
+		z-index: 10;
+		top: 30px;
+		left: 30px;
+	}
+
+	img.large, img.small {
+		position: relative;
+		z-index: 1;
+	}
+	
+	img.large {
+		width: 100%;
+		float: left;
+	}
+
+	h1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 3;
+		padding: 4%;
+		color: white;
+		text-align: center;
+		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.6 );
+		@include font-headline;
+
+		@include respond-to( 768px ) { padding: 4% 15%; }
+		@include respond-to( 1024px ) { padding: 4% 22%; }
+	}
+}
+
+article {
+	max-width: 700px;
+	padding: 30px 0;
+	margin: 0 auto;
+}
