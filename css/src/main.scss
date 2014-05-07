@@ -1,4 +1,6 @@
 
+$grey: #5f626f;
+
 @import "reset";
 
 @import "mixins";
@@ -8,8 +10,8 @@
 body {
 	@include font-reading;
 	color: #555;
-	font-size: 14px;
-	line-height: 19px;
+	font-size: 17px;
+	line-height: 25px;
 
 	@include respond-to( 768px ) {
 		font-size: 20px;
@@ -17,51 +19,63 @@ body {
 	}
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 10px 0;
+
+	@include respond-to( 768px ) {
+		padding: 13px 0;
+	}
+}
+
 h1 {
 	font-size: 2em;
-	line-height: 1.1em;
+	line-height: 1.3em;
 }
 
 header {
 	position: relative;
+	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
+	background: $grey url(../img/bg-head-default.png);
+	padding: 130px 30px 50px 30px;
 	@include clearfix;
+
+	&.cover {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	img.logo {
 		position: absolute;
 		z-index: 10;
-		top: 30px;
-		left: 30px;
-	}
-
-	img.large, img.small {
-		position: relative;
-		z-index: 1;
-	}
-	
-	img.large {
-		width: 100%;
-		float: left;
+		top: 0;
+		left: 0;
 	}
 
 	h1 {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		left: 0;
+		max-width: 700px;
+		margin: 0 auto;
 		z-index: 3;
-		padding: 4%;
 		color: white;
-		text-align: center;
 		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.6 );
 		@include font-headline;
-
-		@include respond-to( 768px ) { padding: 4% 15%; }
-		@include respond-to( 1024px ) { padding: 4% 22%; }
 	}
 }
 
 article {
-	max-width: 700px;
-	padding: 30px 0;
+	max-width: 800px;
+	padding: 30px;
 	margin: 0 auto;
+
+	p.meta {
+		@include font-light;
+		font-size: 0.75em;
+		color: lighten( $grey, 20% );
+		letter-spacing: 2px;
+	}
+
+	@include respond-to( 768px ) {
+		padding: 50px;
+	}
 }

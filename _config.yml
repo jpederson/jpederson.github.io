@@ -1,4 +1,6 @@
 
+markdown: kramdown
+
 # set the base URL to root
 baseurl: 
 
