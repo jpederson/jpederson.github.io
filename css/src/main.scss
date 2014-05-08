@@ -28,9 +28,28 @@ p, h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+h1, h2, h3, h4 {
+	@include font-headline;
+}
+
 h1 {
-	font-size: 2em;
+	font-size: 2.1em;
 	line-height: 1.3em;
+}
+
+h2 {
+	font-size: 1.8em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-size: 1.4em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.2em;
+	line-height: 1.1em;
 }
 
 header {
@@ -39,9 +58,9 @@ header {
 	background: $grey url(../img/bg-head-default.png);
 	@include clearfix;
 
-	padding: 140px 30px 50px;
-	@include respond-to( 768px ) { padding: 210px 50px 50px; }
-	@include respond-to( 1024px ) { padding: 280px 100px 70px; }
+	padding: 150px 0 40px;
+	@include respond-to( 768px ) { padding: 200px 0 50px; }
+	@include respond-to( 1024px ) { padding: 250px 0 50px; }
 
 	&.cover {
 		background-position: center center;
@@ -61,8 +80,24 @@ header {
 		margin: 0 auto;
 		z-index: 3;
 		color: white;
-		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.6 );
+		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.7 );
+		padding: 0;
 		@include font-headline;
+	}
+
+	h3 {
+		color: white;
+		padding: 0;
+		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.7 );
+		@include font-light;
+	}
+
+	.page-head {
+		max-width: 800px;
+		padding: 0 30px;
+		margin: 0 auto;
+
+		@include respond-to( 768px ) { padding: 0 50px; }
 	}
 }
 

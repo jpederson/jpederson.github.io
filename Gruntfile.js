@@ -10,15 +10,19 @@ module.exports = function(grunt) {
 		watch: {
 			js: {
 				files: ['js/src/*.js'],
-				tasks: ['uglify']
+				tasks: ['uglify', 'shell']
 			},
 			css: {
 				files: ['css/src/*.scss'],
-				tasks: ['sass','autoprefixer'],
+				tasks: ['sass','autoprefixer', 'shell'],
 				options: {
 					livereload: true
 				}
-			}
+			},
+            html: {
+                files: ['**/*.html', '**/*.md', '!_site/**/*.*'],
+                tasks: ['shell']
+            }
 		},
 
 
@@ -53,6 +57,14 @@ module.exports = function(grunt) {
 				src: 'css/src/main-unprefixed.css'
 			}
 		},
+
+
+		// build the Jekyll site.
+		shell: {
+			jekyll: {
+				command: 'jekyll build'
+			}
+		}
 
 	});
 
