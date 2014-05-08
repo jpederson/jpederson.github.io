@@ -5,10 +5,10 @@ title: Welcome
 ---
 
 <ul>
-  {% for item in site.categories.blog limit:1000 %}
+  {% for item in site.posts limit:1000 %}
     <li><a class='item' href='{{ site.baseurl }}{{ item.url }}'>{{ item.title }}</a><br>
     	<span class='date'>{{ item.date | date:"%B %-d, %Y" }}</span></li>
   {% endfor %}
 </ul>
 
-{% include rss-link.html %}
+{% include rss/link.html %}

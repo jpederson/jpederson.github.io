@@ -62,7 +62,7 @@ module.exports = function(grunt) {
 		// build the Jekyll site.
 		shell: {
 			jekyll: {
-				command: 'jekyll build'
+				command: 'jekyll build --drafts'
 			}
 		}
 

@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{page.title}} | jpederson.com</title>
+{% include header.html %}
 
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width; initial-scale=1' />
-
-  <link rel='alternate' type='application/rss+xml' title='RSS' href='/blog.rss' />
-
-  <link rel='shortcut icon' href='{{ site.baseurl }}/favicon.ico' type='image/x-icon' />
-  <link href='{{ site.baseurl }}/css/main.css' rel='stylesheet' />
-</head>
-<body>
   <header{% if page.photo %} class="cover" style="background-image: url({{ site.baseurl }}{{ page.photo }});"{% endif %}>
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo.png" class="logo"></a>
     
@@ -19,11 +7,12 @@
   </header>
   <article class="content">
     <p class="meta">{{ page.date | date:"%B %-d, %Y" }}</p>
+    
     {{content}}
 
     {% for client in site.data.clients %}
     <li>{{ client.name }} {{ client.link }}</li>
     {% endfor %}
   </div>
-  <script src='{{ site.baseurl }}/js/main.js'></script>
-</body>
+
+{% include footer.html %}

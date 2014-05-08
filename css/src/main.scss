@@ -28,6 +28,14 @@ p, h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
 h1, h2, h3, h4 {
 	@include font-headline;
 }
@@ -50,6 +58,29 @@ h3 {
 h4 {
 	font-size: 1.2em;
 	line-height: 1.1em;
+}
+
+hr {
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	margin: 15px 0;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-style: italic;
+	border: 1px solid #eee;
+	color: lighten( $grey, 20% );
+	border-left: 0;
+	border-right: 0;
+	margin: 10px 0;
+
+	padding: 20px 0;
+	@include respond-to( 500px ) { padding: 20px 30px; }
+	@include respond-to( 768px ) { padding: 20px 50px; }
 }
 
 header {
@@ -89,6 +120,7 @@ header {
 		color: white;
 		padding: 0;
 		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.7 );
+		opacity: .6;
 		@include font-light;
 	}
 
@@ -112,7 +144,7 @@ article {
 		@include font-light;
 		font-size: 0.75em;
 		color: lighten( $grey, 20% );
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 	}
 
 }
