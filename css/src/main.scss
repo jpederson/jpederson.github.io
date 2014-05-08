@@ -37,8 +37,11 @@ header {
 	position: relative;
 	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
 	background: $grey url(../img/bg-head-default.png);
-	padding: 130px 30px 50px 30px;
 	@include clearfix;
+
+	padding: 140px 30px 50px;
+	@include respond-to( 768px ) { padding: 210px 50px 50px; }
+	@include respond-to( 1024px ) { padding: 280px 100px 70px; }
 
 	&.cover {
 		background-position: center center;
@@ -65,9 +68,11 @@ header {
 
 article {
 	max-width: 800px;
-	padding: 30px;
 	margin: 0 auto;
 
+	padding: 30px;
+	@include respond-to( 768px ) { padding: 50px; }
+	
 	p.meta {
 		@include font-light;
 		font-size: 0.75em;
@@ -75,7 +80,4 @@ article {
 		letter-spacing: 2px;
 	}
 
-	@include respond-to( 768px ) {
-		padding: 50px;
-	}
 }
