@@ -13,16 +13,16 @@
 </head>
 <body>
   
-  <header{% if page.photo %} class="cover" style="background-image: url({{ site.baseurl }}{{ page.photo }});"{% endif %}>
-    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo.png" class="logo"></a>
+  <header class="post" {% if page.photo %} style="background-image: url({{ site.baseurl }}{{ page.photo }});"{% endif %}>
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-post.png" class="logo"></a>
     
-    <div class="page-head">
+    <div class="wrap">
       <h1 class="title">{{ page.title }}</a></h1>
       {% if page.subtitle %}<h3 class="subtitle">{{ page.subtitle }}</h3>{% endif %}
     </div>
   </header>
 
-  <article class="content">
+  <article class="wrap">
     {{content}}
     <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} in {% for cat in page.categories limit:1 %}{{ cat | capitalize }}{% endfor %}</p>
   </article>
@@ -33,11 +33,12 @@
   {% for category_name in page.categories limit:1 %}
     <h6>More from</h6>
     <h3>{{ category_name | capitalize }}</h3>
-    <ul>
-    {% for post in site.categories[category_name] %}
-      <li>{{ post.title }}</li>
-    {% endfor %}  
-    </ul>
+    {% for post in site.categories[category_name] limit:5 %}
+    <div class="entry">
+      <h3>{{ post.title }}</h3>
+      {% if post.subtitle %}<h5>{{ post.subtitle }}</h5>{% endif %}
+    </div>
+    {% endfor %}
   {% endfor %}
   </article>
 

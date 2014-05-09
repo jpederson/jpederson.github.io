@@ -1,7 +1,7 @@
 ---
 origin: /
-title: Blog
-description: Occasional Blog Posts
+title: James Pederson
+description: Web developer news, code snippets & random ramblings.
 ---
 
 <?xml version='1.0' encoding='utf-8' ?>
@@ -11,6 +11,15 @@ description: Occasional Blog Posts
   <link>{{site.baseurl}}</link>
   <description>{{page.description}}</description>
   <language>en</language>
-  {% for item in site.categories.blog limit:40 %}{% include rss/item.xml %}{% endfor %}
+  {% for item in site.posts limit:40 %}
+  <item>
+    <title>{{ item.title | xml_escape}}</title>
+    <link>{{ site.baseurl }}{{ item.url }}</link>
+    <description>{{ item.content | markdownify | xml_escape }}</description>
+    <pubDate>{{ item.date | date_to_xmlschema }}</pubDate>
+    <dc:creator>{{ site.name }}</dc:creator>
+    <guid isPermaLink="true">{{ site.baseurl }}{{ item.url }}</guid>
+  </item>
+  {% endfor %}
 </channel>
 </rss>

@@ -1,14 +1,45 @@
 ---
-layout: default
-section: blog
-title: Welcome
+title: Web Design & Development, Madison, WI
 ---
 
-<ul>
-  {% for item in site.posts limit:1000 %}
-    <li><a class='item' href='{{ site.baseurl }}{{ item.url }}'>{{ item.title }}</a><br>
-    	<span class='date'>{{ item.date | date:"%B %-d, %Y" }}</span></li>
-  {% endfor %}
-</ul>
+{% include header.html %}
 
-{% include rss/link.html %}
+	<header class="home">
+		<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-home.png" class="logo"></a>
+	</header>
+
+	<div class="seventy">
+
+	  <article class="posts wrap">
+		
+		{% for item in site.posts limit:10 %}
+		<div class="entry row-{{ increment post_count }}">
+			<h4><a class='item' href='{{ site.baseurl }}{{ item.url }}'>{{ item.title }}</a></h4>
+			{{ item.excerpt }}
+		</div>
+		{% endfor %}
+
+		{% for client in site.data.clients %}
+		<li>{{ client.name }} {{ client.link }}</li>
+		{% endfor %}
+		
+	</div>
+
+	<div class="thirty">
+
+	  <article class="posts wrap">
+		
+		{% for item in site.posts limit:10 %}
+		<div class="entry row-{{ increment post_count }}">
+			<h4><a class='item' href='{{ site.baseurl }}{{ item.url }}'>{{ item.title }}</a></h4>
+			{{ item.excerpt }}
+		</div>
+		{% endfor %}
+
+		{% for client in site.data.clients %}
+		<li>{{ client.name }} {{ client.link }}</li>
+		{% endfor %}
+		
+	</div>
+
+{% include footer.html %}

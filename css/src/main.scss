@@ -19,6 +19,14 @@ body {
 	}
 }
 
+a {
+	color: $purple;
+
+	&:hover {
+		color: ;
+	}
+}
+
 p, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 10px 0;
@@ -38,6 +46,10 @@ strong {
 
 h1, h2, h3, h4 {
 	@include font-headline;
+
+	a {
+		text-decoration: none;
+	}
 }
 
 h1 {
@@ -57,6 +69,20 @@ h3 {
 
 h4 {
 	font-size: 1.2em;
+	line-height: 1.1em;
+}
+
+h5, h6 {
+	@include font-light;
+}
+
+h5 {
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+
+h6 {
+	font-size: .9em;
 	line-height: 1.1em;
 }
 
@@ -83,20 +109,31 @@ blockquote {
 	@include respond-to( 768px ) { padding: 20px 50px; }
 }
 
+.wrap {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+	@include respond-to( 600px ) { padding: 50px; }
+}
+
 header {
 	position: relative;
 	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
-	background: $grey url(../img/bg-head-default.png);
+	background: $grey url(../img/bg-post.jpg);
 	@include clearfix;
 
-	padding: 150px 0 40px;
-	@include respond-to( 768px ) { padding: 200px 0 50px; }
-	@include respond-to( 1024px ) { padding: 250px 0 50px; }
-
-	&.cover {
+	&.post {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		padding-top: 100px;
+		@include respond-to( 768px ) { padding-top: 110px; }
+		@include respond-to( 1024px ) { padding-top: 160px; }
+	}
+
+	&.home {
+		background: none;
 	}
 
 	img.logo {
@@ -123,28 +160,27 @@ header {
 		opacity: .6;
 		@include font-light;
 	}
-
-	.page-head {
-		max-width: 800px;
-		padding: 0 30px;
-		margin: 0 auto;
-
-		@include respond-to( 768px ) { padding: 0 50px; }
-	}
 }
 
 article {
-	max-width: 800px;
-	margin: 0 auto;
-
-	padding: 30px;
-	@include respond-to( 768px ) { padding: 50px; }
-	
 	p.meta {
 		@include font-light;
 		font-size: 0.75em;
 		color: lighten( $grey, 20% );
 		letter-spacing: 1px;
 	}
+}
 
+
+
+@include respond-to( 768px ) {
+	.seventy {
+		width: 70%;
+		float: left;
+	}
+
+	.thirty {
+		width: 30%;
+		float: left;
+	}
 }
