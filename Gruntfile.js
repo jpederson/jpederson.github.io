@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 				}
 			},
             html: {
-                files: ['**/*.html', '**/*.md', '!_site/**/*.*'],
+                files: ['**/*.html', '**/*.md', '**/*.rss', '**/*.yml', '!_site/**/*.*'],
                 tasks: ['shell']
             }
 		},

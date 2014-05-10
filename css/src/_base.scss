@@ -1,0 +1,117 @@
+body {
+	@include font-reading;
+	color: #555;
+	font-size: 17px;
+	line-height: 25px;
+
+	@include respond-to( 768px ) {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+a {
+	color: $purple;
+
+	&:hover {
+		color: lighten( $purple, 10% );
+	}
+
+	&.meta {
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 10px 0;
+
+	@include respond-to( 768px ) {
+		padding: 13px 0;
+	}
+
+	&.center {
+		text-align: center;
+	}
+
+	&.right {
+		text-align: right;
+	}
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+h1, h2, h3, h4 {
+	@include font-headline;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-size: 2.1em;
+	line-height: 1.3em;
+}
+
+h2 {
+	font-size: 1.8em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-size: 1.4em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+
+h5, h6 {
+	@include font-light;
+}
+
+h5 {
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+
+h6 {
+	font-size: .9em;
+	line-height: 1.1em;
+}
+
+hr {
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid lighten( $grey, 30% );
+	margin: 15px 0;
+}
+
+blockquote {
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-style: italic;
+	border: 1px solid #eee;
+	color: lighten( $grey, 20% );
+	border-left: 0;
+	border-right: 0;
+	margin: 10px 0;
+
+	padding: 20px 0;
+	@include respond-to( 500px ) { padding: 20px 30px; }
+	@include respond-to( 768px ) { padding: 20px 50px; }
+}

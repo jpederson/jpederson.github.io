@@ -1,5 +1,6 @@
 
 $grey: #5f626f;
+$purple: #693494;
 
 @import "reset";
 
@@ -7,120 +8,30 @@ $grey: #5f626f;
 
 @import "fonts";
 
-body {
-	@include font-reading;
-	color: #555;
-	font-size: 17px;
-	line-height: 25px;
+@import "grid";
 
-	@include respond-to( 768px ) {
-		font-size: 20px;
-		line-height: 30px;
-	}
-}
+@import "base";
 
-a {
-	color: $purple;
 
-	&:hover {
-		color: ;
-	}
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 10px 0;
-
-	@include respond-to( 768px ) {
-		padding: 13px 0;
-	}
-}
-
-em {
-	font-style: italic;
-}
-
-strong {
-	font-weight: 700;
-}
-
-h1, h2, h3, h4 {
-	@include font-headline;
-
-	a {
-		text-decoration: none;
-	}
-}
-
-h1 {
-	font-size: 2.1em;
-	line-height: 1.3em;
-}
-
-h2 {
-	font-size: 1.8em;
-	line-height: 1.2em;
-}
-
-h3 {
-	font-size: 1.4em;
-	line-height: 1.2em;
-}
-
-h4 {
-	font-size: 1.2em;
-	line-height: 1.1em;
-}
-
-h5, h6 {
-	@include font-light;
-}
-
-h5 {
-	font-size: 1.2em;
-	line-height: 1.1em;
-}
-
-h6 {
-	font-size: .9em;
-	line-height: 1.1em;
-}
-
-hr {
-	height: 0;
-	border: 0;
-	border-bottom: 1px solid #ddd;
-	margin: 15px 0;
-}
-
-blockquote {
-	text-align: center;
-	font-size: 1.3em;
-	line-height: 1.3em;
-	font-style: italic;
-	border: 1px solid #eee;
-	color: lighten( $grey, 20% );
-	border-left: 0;
-	border-right: 0;
-	margin: 10px 0;
-
-	padding: 20px 0;
-	@include respond-to( 500px ) { padding: 20px 30px; }
-	@include respond-to( 768px ) { padding: 20px 50px; }
-}
-
-.wrap {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 30px;
-	@include respond-to( 600px ) { padding: 50px; }
-}
-
+// header styles
 header {
 	position: relative;
 	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
 	background: $grey url(../img/bg-post.jpg);
 	@include clearfix;
+
+	img.logo {
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 50%;
+		margin-left: -75px;
+
+		@include respond-to( 1024px ) {
+			left: 0;
+			margin-left: 0;
+		}
+	}
 
 	&.post {
 		background-position: center center;
@@ -130,17 +41,18 @@ header {
 		padding-top: 100px;
 		@include respond-to( 768px ) { padding-top: 110px; }
 		@include respond-to( 1024px ) { padding-top: 160px; }
+
+		img.logo {
+			left: 0;
+			margin-left: 0;
+		}
 	}
 
 	&.home {
 		background: none;
-	}
 
-	img.logo {
-		position: absolute;
-		z-index: 10;
-		top: 0;
-		left: 0;
+		margin-bottom: 120px;
+		@include respond-to( 1024px ) { margin-bottom: 40px; }
 	}
 
 	h1 {
@@ -162,25 +74,12 @@ header {
 	}
 }
 
-article {
-	p.meta {
-		@include font-light;
-		font-size: 0.75em;
-		color: lighten( $grey, 20% );
-		letter-spacing: 1px;
-	}
+
+// meta information style
+p.meta {
+	@include font-light;
+	font-size: 0.75em;
+	color: lighten( $grey, 20% );
+	letter-spacing: 1px;
 }
 
-
-
-@include respond-to( 768px ) {
-	.seventy {
-		width: 70%;
-		float: left;
-	}
-
-	.thirty {
-		width: 30%;
-		float: left;
-	}
-}

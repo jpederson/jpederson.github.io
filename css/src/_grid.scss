@@ -1,0 +1,56 @@
+.wrap {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+	@include respond-to( 600px ) { padding: 30px 50px; }
+}
+
+
+.half {
+	padding: 8px 0;
+
+	@include respond-to( 500px ) {
+		width: 50%;
+		float: left;
+		padding: 20px 15px;
+		text-align: center;
+
+		.first { clear: left; }
+	}
+
+	@include respond-to( 1024px ) {
+		width: auto;
+		float: none;
+		padding: 15px 0;
+		text-align: left;
+	}
+	
+	@include respond-to( 1200px ) {	
+		width: 50%;
+		float: left;
+		padding: 20px 15px;
+		text-align: center;
+	}
+}
+
+
+@include respond-to( 1024px ) {
+	.seventy {
+		width: 60%;
+		float: left;
+		padding: 0 0 0 70px;
+	}
+	
+	.thirty {
+		width: 40%;
+		float: left;
+		padding: 0 30px 0 0;
+	}
+}
+
+
+@include respond-to( 1200px ) {	
+	.thirty {
+		padding: 0 70px 0 0;
+	}
+}
