@@ -1,6 +1,7 @@
+
 body {
 	@include font-reading;
-	color: #555;
+	color: darken( $grey, 10% );
 	font-size: 17px;
 	line-height: 25px;
 
@@ -12,6 +13,7 @@ body {
 
 a {
 	color: $purple;
+	transition: opacity 400ms ease-in-out;
 
 	&:hover {
 		color: lighten( $purple, 10% );
@@ -105,7 +107,7 @@ blockquote {
 	font-size: 1.3em;
 	line-height: 1.3em;
 	font-style: italic;
-	border: 1px solid #eee;
+	border: 1px solid lighten( $grey, 50% );
 	color: lighten( $grey, 20% );
 	border-left: 0;
 	border-right: 0;

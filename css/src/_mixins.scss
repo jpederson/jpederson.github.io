@@ -14,7 +14,7 @@
 		display: table;
 	}
 
-	&:after { clear: both; }
+	&, &:before, &:after { clear: both; }
 }
 
 
