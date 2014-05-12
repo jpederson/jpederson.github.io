@@ -1,5 +1,63 @@
-- name: Project 1
-  link: http://www.jpederson.com/
+- name: Shift and Go Mobile
+  link: http://shiftandgomobile.com/
+  image: shift-mobile.png
 
-- name: Project 2
-  link: http://www.shiftandgomobile.com/
+- name: Loudoun Credit Union
+  link: http://loudouncu.com/
+  image: loudoun.png
+
+- name: Giraph Creative
+  link: http://giraphcu.com/
+  image: giraph.png
+
+- name: CT3 Race Team
+  link: http://ct3racing.com/
+  image: ct3.png
+
+- name: Accrue.js
+  link: http://accruejs.com/
+  image: accrue.png
+
+- name: Shift Checking
+  link: http://shiftchecking.com/
+  image: shift-main.png
+
+- name: Quit the Hit
+  link: http://quitthehit.com/
+  image: vacul-qth.png
+
+- name: NWCUA
+  link: http://nwcua.org/
+  image: nwcua.png
+
+- name: NWCUA - Truth Speaks
+  link: http://nwcua.org/truth
+  image: nwcua-truth.png
+
+- name: McKesson Credit Union
+  link: http://mckessoncu.com/
+  image: mckesson.png
+
+- name: High Country Mom
+  link: http://highcountrymom.com/
+  image: highcountrymom.png
+
+- name: Baylands Loan Challenge
+  link: http://baylandsloanchallenge.com/
+  image: baylands-loanchallenge.png
+
+- name: FAACU - My Auto Rebate
+  link: http://myautorebate.com/
+  image: faa-myautorebate.png
+
+- name: FAACU - See Your Score Soar
+  link: http://seeyourscoresoar.com/
+  image: faa-scoresoar.png
+
+- name: Balax
+  link: http://balax.com
+  image: balax.png
+
+- name: Ayuda Global
+  link: http://ayudaglobal.com
+  image: ayuda.png

@@ -9,13 +9,14 @@
 .half {
 	padding: 8px 0;
 
+	&.first { clear: left; }
+
 	@include respond-to( 500px ) {
 		width: 50%;
 		float: left;
 		padding: 20px 15px;
 		text-align: center;
 
-		.first { clear: left; }
 	}
 
 	@include respond-to( 1024px ) {

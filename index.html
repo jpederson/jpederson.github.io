@@ -1,5 +1,6 @@
 ---
 title: Web Design & Development, Madison, WI
+twitter: http://twitter.com/jamespederson
 ---
 
 {% include header.html %}
@@ -50,17 +51,17 @@ title: Web Design & Development, Madison, WI
 
 	<div class="thirty">
 
-		<article class="connect wrap">
+		<article class="connect wrap group">
 
 			<h4 class="center">Connect With Me</h4>
 			<p class="center">
-				<a href="https://twitter.com/jamespederson"><img src="img/icon-twitter.png" alt=""></a>
-				<a href="https://github.com/jpederson/"><img src="img/icon-github.png" alt=""></a>
-				<a href="https://facebook.com/james.pederson"><img src="img/icon-facebook.png" alt=""></a>
-				<a href="http://www.linkedin.com/in/jamespederson/"><img src="img/icon-linkedin.png" alt=""></a>
-				<a href="https://plus.google.com/u/0/+JamesPederson85/posts"><img src="img/icon-google.png" alt=""></a>
+				<a href="{{ site.social_twitter }}"><img src="img/icon-twitter.png" alt=""></a>
+				<a href="{{ site.social_github }}"><img src="img/icon-github.png" alt=""></a>
+				<a href="{{ site.social_facebook }}"><img src="img/icon-facebook.png" alt=""></a>
+				<a href="{{ site.social_linkedin }}"><img src="img/icon-linkedin.png" alt=""></a>
+				<a href="{{ site.social_google }}"><img src="img/icon-google.png" alt=""></a>
 				<a href="/blog.rss"><img src="img/icon-rss.png" alt=""></a>
-				<a href="mailto:james@jpederson.com"><img src="img/icon-email.png" alt=""></a>
+				<a href="mailto:{{ site.email }}"><img src="img/icon-email.png" alt=""></a>
 			</p>
 
 		</article>
@@ -72,7 +73,8 @@ title: Web Design & Development, Madison, WI
 			{% for item in site.posts limit:10 %}
 			<div class="entry row-{% increment post_count %}">
 				<p><a class="item" href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.title }}</strong></a><br>
-				<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}</span>
+					<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}<br></span>
+					<span class="date quiet">{{ item.date | date: "%B %-d, %Y" }}</span></p>
 			</div>
 			{% endfor %}
 		
@@ -82,9 +84,14 @@ title: Web Design & Development, Madison, WI
 	<div class="work group">
 			
 		{% for client in site.data.clients %}
-		<li>{{ client.name }} {{ client.link }}</li>
+		<a href="{{ client.link }}" target="_blank"><img src="/img/portfolio/{{ client.image }}" alt="{{ client.name }}"></a>
 		{% endfor %}
 
+	</div>
+
+	<div class="clients wrap">
+		<h4 class="center">Want to see more?</h4>
+		<p>To see more of my work, follow me on <a href="{{ site.social_twitter }}">Twitter</a> to get updates, or read the blog to find case studies and learn about how I work.</p>
 	</div>
 
 {% include footer.html %}
