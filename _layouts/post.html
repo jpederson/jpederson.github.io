@@ -24,9 +24,10 @@
 
   <article class="wrap">
     {{content}}
-    <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} in {% for cat in page.categories limit:1 %}{{ cat | capitalize }}{% endfor %}</p>
+    <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} in {% for cat in page.categories limit:1 %}{{ cat | capitalize }}{% endfor %} by {{ page.author }}</p>
   </article>
-  
+
+  <!--  
   <hr>
 
   <article class="wrap">
@@ -41,6 +42,7 @@
     {% endfor %}
   {% endfor %}
   </article>
+  -->
 
   <script src='{{ site.baseurl }}/js/main.js'></script>
 </body>

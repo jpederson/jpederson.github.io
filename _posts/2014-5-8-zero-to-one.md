@@ -4,6 +4,7 @@ categories: Inspiration
 title: Zero to One
 subtitle: And all the joys and pains in between.
 photo: /img/spark.jpg
+author: [James Pederson](http://jpederson.com)
 ---
 
 Every creative project has a moment when it really starts moving &mdash; a moment when an idea really ignites your creativity.
