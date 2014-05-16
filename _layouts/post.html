@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{page.title}} | jpederson.com</title>
-
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width; initial-scale=1' />
-
-  <link rel='alternate' type='application/rss+xml' title='RSS' href='/blog.rss' />
-
-  <link rel='shortcut icon' href='{{ site.baseurl }}/img/favicon.ico' type='image/x-icon' />
-  <link href='{{ site.baseurl }}/css/main.css' rel='stylesheet' />
-</head>
-<body>
+{% include header.html %}
   
   <header class="post" {% if page.photo %} style="background-image: url({{ site.baseurl }}{{ page.photo }});"{% endif %}>
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-post.png" class="logo"></a>
@@ -27,22 +14,4 @@
     <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} in {% for cat in page.categories limit:1 %}{{ cat | capitalize }}{% endfor %} by {{ page.author }}</p>
   </article>
 
-  <!--  
-  <hr>
-
-  <article class="wrap">
-  {% for category_name in page.categories limit:1 %}
-    <h6>More from</h6>
-    <h3>{{ category_name | capitalize }}</h3>
-    {% for post in site.categories[category_name] limit:5 %}
-    <div class="entry">
-      <h3>{{ post.title }}</h3>
-      {% if post.subtitle %}<h5>{{ post.subtitle }}</h5>{% endif %}
-    </div>
-    {% endfor %}
-  {% endfor %}
-  </article>
-  -->
-
-  <script src='{{ site.baseurl }}/js/main.js'></script>
-</body>
+{% include header.html %}
