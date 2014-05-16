@@ -45,6 +45,7 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'js/main.js': 'js/src/*.js',
+					'js/head.js': 'js/lib/*.js',
 				}
 			}
 		},

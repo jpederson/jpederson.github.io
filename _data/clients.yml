@@ -14,25 +14,25 @@
   link: http://ct3racing.com/
   image: ct3.png
 
-- name: Accrue.js
-  link: http://accruejs.com/
-  image: accrue.png
-
-- name: Shift Checking
-  link: http://shiftchecking.com/
-  image: shift-main.png
-
-- name: Quit the Hit
-  link: http://quitthehit.com/
-  image: vacul-qth.png
-
 - name: NWCUA
   link: http://nwcua.org/
   image: nwcua.png
 
-- name: NWCUA - Truth Speaks
-  link: http://nwcua.org/truth
-  image: nwcua-truth.png
+- name: CreditUnion.io
+  link: http://creditunion.io/
+  image: cuio.png
+
+- name: Accrue.js
+  link: http://accruejs.com/
+  image: accrue.png
+
+- name: FAACU - My Auto Rebate
+  link: http://myautorebate.com/
+  image: faa-myautorebate.png
+
+- name: FAACU - See Your Score Soar
+  link: http://seeyourscoresoar.com/
+  image: faa-scoresoar.png
 
 - name: McKesson Credit Union
   link: http://mckessoncu.com/
@@ -42,17 +42,17 @@
   link: http://highcountrymom.com/
   image: highcountrymom.png
 
+- name: Shift Checking
+  link: http://shiftchecking.com/
+  image: shift-main.png
+
+- name: Quit the Hit
+  link: http://quitthehit.com/
+  image: vacul-qth.png
+
 - name: Baylands Loan Challenge
   link: http://baylandsloanchallenge.com/
   image: baylands-loanchallenge.png
-
-- name: FAACU - My Auto Rebate
-  link: http://myautorebate.com/
-  image: faa-myautorebate.png
-
-- name: FAACU - See Your Score Soar
-  link: http://seeyourscoresoar.com/
-  image: faa-scoresoar.png
 
 - name: Balax
   link: http://balax.com

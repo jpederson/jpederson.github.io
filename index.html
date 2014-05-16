@@ -8,78 +8,83 @@ twitter: http://twitter.com/jamespederson
 	<header class="home">
 		<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-home.png" class="logo"></a>
 	</header>
+	
+	<main>
 
-	<div class="seventy">
+		<div class="seventy">
 
-		<article class="intro wrap">
+			<article class="intro wrap">
 
-			<h4 class="center">Hi there!</h4>
-		
-			<p class="lead">My name is James - I build things on the web for great companies, organizations, and people. I love what I do.</p>
-
-			<p>As a freelance web developer in Madison over the past 9 years, I've had the opportunity to work with some really great people to develop all sorts of interesting things.</p>
+				<h4 class="center">Hi there!</h4>
 			
-		</article>
+				<p class="lead">My name is James - I build things on the web for great companies, organizations, and people. I love what I do.</p>
 
-		<article class="skills wrap group">
+				<p>As a freelance web developer in Madison over the past 9 years, I've had the opportunity to work with some really great people to develop all sorts of interesting things.</p>
+				
+			</article>
 
-			<h4 class="center">What I Do</h4>
+			<article class="skills wrap group">
 
-			<div class="half first">
-				<p><strong>Frontend Web Design</strong><br>
-					I build simple, beautiful websites that work on the widest range of devices, load quickly, and perform above expectations.</p>
-			</div>
+				<h4 class="center">What I Do</h4>
 
-			<div class="half">
-				<p><strong>User Experience Design</strong><br>
-					Throughout the process of building every site, I strive to build intuitive, simple interfaces that your visitors will love.</p>
-			</div>
+				<div class="half first">
+					<p><strong>Frontend Web Design</strong><br>
+						I build simple, beautiful websites that work on the widest range of devices, load quickly, and perform above expectations.</p>
+				</div>
 
-			<div class="half first">
-				<p><strong>Accessibility</strong><br>
-					Your content is the most important part of your site, and it deserves to be legible and accessible by any device or user.</p>
-			</div>
+				<div class="half">
+					<p><strong>User Experience Design</strong><br>
+						Throughout the process of building every site, I strive to build intuitive, simple interfaces that your visitors will love.</p>
+				</div>
 
-			<div class="half">
-				<p><strong>Linux Server Administration</strong><br>
-					Need a complex server configuration to serve your content? I've configured and launched several production servers into the cloud.</p>
-			</div>
+				<div class="half first">
+					<p><strong>Accessibility</strong><br>
+						Your content is the most important part of your site, and it deserves to be legible and accessible by any device or user.</p>
+				</div>
 
-		</article>
+				<div class="half">
+					<p><strong>Linux Server Administration</strong><br>
+						Need a complex server configuration to serve your content? I've configured and launched several production servers into the cloud.</p>
+				</div>
 
-	</div>
+			</article>
 
-	<div class="thirty">
+		</div>
 
-		<article class="connect wrap group">
+		<div class="thirty">
 
-			<h4 class="center">Connect With Me</h4>
-			<p class="center">
-				<a href="{{ site.social_twitter }}"><img src="img/icon-twitter.png" alt=""></a>
-				<a href="{{ site.social_github }}"><img src="img/icon-github.png" alt=""></a>
-				<a href="{{ site.social_facebook }}"><img src="img/icon-facebook.png" alt=""></a>
-				<a href="{{ site.social_linkedin }}"><img src="img/icon-linkedin.png" alt=""></a>
-				<a href="{{ site.social_google }}"><img src="img/icon-google.png" alt=""></a>
-				<a href="/blog.rss"><img src="img/icon-rss.png" alt=""></a>
-				<a href="mailto:{{ site.email }}"><img src="img/icon-email.png" alt=""></a>
-			</p>
+			<article class="connect wrap group">
 
-		</article>
+				<h4 class="center">Connect With Me</h4>
+				<p class="center">
+					<a href="{{ site.social_twitter }}"><img src="img/icon-twitter.png" alt=""></a>
+					<a href="{{ site.social_github }}"><img src="img/icon-github.png" alt=""></a>
+					<a href="{{ site.social_facebook }}"><img src="img/icon-facebook.png" alt=""></a>
+					<a href="{{ site.social_linkedin }}"><img src="img/icon-linkedin.png" alt=""></a>
+					<a href="{{ site.social_google }}"><img src="img/icon-google.png" alt=""></a>
+					<a href="/blog.rss"><img src="img/icon-rss.png" alt=""></a>
+					<a href="mailto:{{ site.email }}"><img src="img/icon-email.png" alt=""></a>
+				</p>
 
-		<article class="posts wrap">
-		
-			<h4 class="center">Things I Write</h4>
+			</article>
 
-			{% for item in site.posts limit:10 %}
-			<div class="entry row-{% increment post_count %}">
-				<p><a class="item" href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.title }}</strong></a><br>
-					<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}<br></span>
-					<span class="date quiet">{{ item.date | date: "%B %-d, %Y" }}</span></p>
-			</div>
-			{% endfor %}
-		
-		</article>
-	</div>
+			<article class="posts wrap">
+			
+				<h4 class="center">Things I Write</h4>
+
+				{% for item in site.posts limit:10 %}
+				<div class="entry row-{% increment post_count %}">
+					<p><a class="item" href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.title }}</strong></a><br>
+						<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}<br></span>
+						<span class="date quiet">{{ item.date | date: "%B %-d, %Y" }}</span></p>
+				</div>
+				{% endfor %}
+			
+			</article>
+			
+		</div>
+
+	</main>
 
 	<div class="work group">
 			

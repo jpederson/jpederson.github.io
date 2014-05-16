@@ -2,7 +2,8 @@
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 30px;
-	@include respond-to( 600px ) { padding: 30px 50px; }
+	@include respond-to( 600px ) { padding: 40px 50px; }
+	@include respond-to( 840px ) { padding: 50px; }
 }
 
 
@@ -39,7 +40,7 @@
 	.seventy {
 		width: 60%;
 		float: left;
-		padding: 0 0 0 70px;
+		padding: 0 0 30px 70px;
 	}
 	
 	.thirty {
