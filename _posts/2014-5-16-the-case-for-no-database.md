@@ -14,7 +14,7 @@ More recently, there's been a resurgence of developers (myself included) favorin
 
 With Jekyll, you can even host your website for free on Github Pages where they'll build your site every time you commit to a repository. You can even edit the site directly on Github or use a tool like [prose.io](http://prose.io) for an intuitive editor that's geared specifically toward managing a Jekyll site through the Github APIs.
 
-_______________
+*****
 
 ### Why I Like Static Sites
 
@@ -24,7 +24,7 @@ With as little nerding out as possible, here's a distilled list of what I enjoy 
 2. **Stability** is important. With static sites, there are fewer points of failure on the server side that could cause issues with your site. Also - if you host on Github, you get *free lifetime backups of every single **version*** of *every single post you've ever written* (just because of how Git itself works).
 3. **Editing** a static site is a natural experience for many developers - and HTML shorthand languages like Markdown and Textile make it just as easy for most other users to manage content. Since they're all file-based, you can use any text editor you like, or pick up a tool like [prose.io](http://prose.io) to edit from anywhere.
 
-_______________
+*****
 
 ### Final Thoughts
 
