@@ -10,17 +10,20 @@ module.exports = function(grunt) {
 		watch: {
 			js: {
 				files: ['js/src/*.js'],
-				tasks: ['uglify', 'shell']
+				tasks: ['uglify','shell'],
+				options: {
+					spawn: false
+				}
 			},
 			css: {
 				files: ['css/src/*.scss'],
-				tasks: ['sass','autoprefixer', 'shell'],
+				tasks: ['sass','autoprefixer','shell'],
 				options: {
-					livereload: true
+					spawn: false
 				}
 			},
             html: {
-                files: ['**/*.html', '**/*.md', '**/*.rss', '**/*.yml', '!_site/**/*.*'],
+                files: ['{*,_posts/*,_data/*,_drafts/*,img/*}.{html,md,yml,rss}'],
                 tasks: ['shell']
             }
 		},
@@ -65,6 +68,19 @@ module.exports = function(grunt) {
 			jekyll: {
 				command: 'jekyll build --drafts'
 			}
+		},
+
+
+		// minify images
+		imagemin: { 
+			dynamic: {                         // Another target
+				files: [{
+					expand: true,                  // Enable dynamic expansion
+					cwd: 'img/src/',                   // Src matches are relative to this path
+					src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+					dest: 'img/'                  // Destination path prefix
+				}]
+			}
 		}
 
 	});
@@ -73,7 +89,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['watch']);
 
 	// a build task just in case we want to
-	grunt.registerTask('build', ['sass','uglify']);
+	grunt.registerTask('build', ['sass','autoprefixer','uglify','imagemin','shell']);
 
 };
 
