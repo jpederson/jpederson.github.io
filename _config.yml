@@ -7,9 +7,6 @@ baseurl:
 # pretty URLs
 permalink: /:year/:month/:day/:title/
 
-# set up a port number for the local server
-port: 4000;
-
 # exclude some irrelevant folders and files
 exclude: [ 'src', 'README.md', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '*.log' ]
 
