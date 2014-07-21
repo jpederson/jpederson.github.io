@@ -111,7 +111,7 @@ blockquote {
 	color: lighten( $grey, 20% );
 	border-left: 0;
 	border-right: 0;
-	margin: 10px 0;
+	margin: 20px 0;
 
 	padding: 20px 0;
 	@include respond-to( 500px ) { padding: 20px 30px; }
