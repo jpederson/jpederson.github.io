@@ -4,14 +4,18 @@ title: On Women in Tech
 subtitle: We're just not that good... at communicating.
 author: James Pederson
 category: Industry
-photo: /img/spark.jpg
+photo: /img/keyboard.jpg
 ---
 
 As a web developer, I've never had a single female developer coworker. Sure, I've had lady bosses, designers, marketers, and project managers - but I rarely see, muchless have the pleasure to work alongside, women. *Why?!*
 
 Men have dominated the tech industry for years, and it's not because we're better at the job, so what is it? *Why aren't there as many women in tech?*
 
-The answer isn't as simple as "companies give unfair advantages to men". That cop out is too easy, and just shifts the blame. Sure, there are a few problem companies, but the simple fact is that fewer women are trying to get into tech. The problem is a bit deeper than bias within companies. If we want to find out how we got here, let us first take a look at where we've been.
+The answer isn't as simple as "companies give unfair advantages to men". That cop out is too easy, and just shifts the blame. Sure, there are a few problem companies, but the simple fact is that fewer women are trying to get into tech. So far, men have won by sheer volume - there are simply more men going after tech jobs.
+
+> As it turns out, we're *pretty great* at convincing our [male] friends to join the industry.
+
+So the problem is a bit deeper than bias within companies. If we want to find out how we got here, let us first take a look at where we've been.
 
 *****
 
@@ -37,6 +41,3 @@ Let the knowledge of our own weaknesses be a teaching tool &mdash; that they may
 
 *****
 
-So far, we've won by sheer volume - there are simply more men going after tech jobs.
-
-> As it turns out, we're *pretty great* at convincing our [male] friends to join the industry.
