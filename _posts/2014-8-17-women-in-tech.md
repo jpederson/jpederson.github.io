@@ -21,11 +21,11 @@ So the problem is a bit deeper than bias within companies. If we want to find ou
 
 ### Boys Will Be Boys
 
-The problems started well before anyone got hired at any company. Boys develop social skills a bit later than girls do in general, but this is especially true when it comes to nerdy boys. Especially through the teen years, nerds were some of the most awkward, unapproachable people in school (me included).
+The problems started well before anyone got hired at any company. Boys develop social skills a bit later than girls do in general, but this is especially true when it comes to nerdy boys. Especially through the teen years, nerds could be some of the most awkward, unapproachable people in school (me included).
 
 Many times, we were slow to make friends and lacked a basic understanding of what drives social interaction. The clics in high school felt almost rock solid, which made mobility between social groups difficult as well. Nerds didn't always know how to approach people - others noticed this, and it made them less inclined to approach us. It's a vicious cycle.
 
-A lot of us developed pretty negative outlooks on our peers as a result.
+Many of us developed pretty negative outlooks on our peers as a result.
 
 > Is it any surprise, then, that girls weren't around as often to share our interest in all things tech?
 
@@ -33,11 +33,6 @@ That's the age when we actually have the time to learn about things &mdash; when
 
 This is something I'm happy to see taking a turn for the better. Social groups tend to include nerds more freely now, and (I can only hope) that extends to schools as well.
 
-But we can still help it along by making sure our own children are taught how to interact with people in healthy ways. Most kids learn these skills from watching their parents interact - so include your kids in conversations when possible, joke with them, and make sure they socialize with those around them as well. Make sure they don't drive away others, and they'll be generally happier in the long run - and maybe more girls will get nerdy.
+But we can still help it along by making sure our own children are taught how to interact with people in healthy ways. Most kids learn these skills from watching their parents interact - so include your kids in conversations when possible, joke with them, and make sure they socialize with those around them as well. Make sure they don't drive others away, and they'll be generally happier in the long run - and maybe more girls will get nerdy.
 
-*****
-
-Let the knowledge of our own weaknesses be a teaching tool &mdash; that they may avoid sharing those weaknesses.
-
-*****
-
+Lets use the knowledge of our own weaknesses be a teaching tool &mdash; that they may avoid sharing those weaknesses. Just my two cents. :)
