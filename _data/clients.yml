@@ -2,6 +2,14 @@
   link: http://lscu.coop/
   image: lscu.png
 
+- name: Northwestern Credit Union Foundation
+  link: https://nwcuf.org/
+  image: nwcuf.png
+
+- name: Ripon College
+  link: https://ripon.edu/
+  image: ripon.png
+
 - name: Loudoun Credit Union
   link: http://loudouncu.com/
   image: loudoun.png
@@ -14,13 +22,17 @@
   link: http://twoscore.biz/
   image: twoscore.png
 
-- name: CT3 Race Team
-  link: http://ct3racing.com/
-  image: ct3.png
+- name: NWCUA Strategic Link
+  link: http://nwcuastrategiclink.com/
+  image: strategic.png
 
 - name: NWCUA
   link: http://nwcua.org/
   image: nwcua.png
+
+- name: CT3 Race Team
+  link: http://ct3racing.com/
+  image: ct3.png
 
 - name: Accrue.js
   link: http://accruejs.com/
