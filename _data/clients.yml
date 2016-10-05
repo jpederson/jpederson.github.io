@@ -1,6 +1,6 @@
-- name: Shift and Go Mobile
-  link: http://shiftandgomobile.com/
-  image: shift-mobile.png
+- name: League of Southeastern Credit Unions
+  link: http://lscu.coop/
+  image: lscu.png
 
 - name: Loudoun Credit Union
   link: http://loudouncu.com/
@@ -10,6 +10,10 @@
   link: http://giraphcu.com/
   image: giraph.png
 
+- name: TwoScore
+  link: http://twoscore.biz/
+  image: twoscore.png
+
 - name: CT3 Race Team
   link: http://ct3racing.com/
   image: ct3.png
@@ -18,13 +22,13 @@
   link: http://nwcua.org/
   image: nwcua.png
 
-- name: CreditUnion.io
-  link: http://creditunion.io/
-  image: cuio.png
-
 - name: Accrue.js
   link: http://accruejs.com/
   image: accrue.png
+
+- name: MyCU.Rocks
+  link: http://mycu.rocks/
+  image: mycurocks.png
 
 - name: FAACU - My Auto Rebate
   link: http://myautorebate.com/
@@ -41,10 +45,6 @@
 - name: High Country Mom
   link: http://highcountrymom.com/
   image: highcountrymom.png
-
-- name: Shift Checking
-  link: http://shiftchecking.com/
-  image: shift-main.png
 
 - name: Quit the Hit
   link: http://quitthehit.com/
