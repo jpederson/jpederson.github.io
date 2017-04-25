@@ -30,12 +30,16 @@
   link: http://nwcua.org/
   image: nwcua.png
 
+- name: Member Loyalty Group
+  link: https://memberloyaltygroup.com/
+  image: mlg.png
+
 - name: CT3 Race Team
   link: http://ct3racing.com/
   image: ct3.png
 
 - name: Accrue.js
-  link: http://accruejs.com/
+  link: /Accrue.js/
   image: accrue.png
 
 - name: MyCU.Rocks
