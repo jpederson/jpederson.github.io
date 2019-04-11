@@ -9,6 +9,14 @@
 - name: Ripon College
   link: https://ripon.edu/
   image: ripon.png
+  
+- name: Front Royal FCU
+  link: https://frontroyalfcu.org/
+  image: frontroyal.png
+
+- name: Leverage
+  link: http://myleverage.com/
+  image: leverage.png
 
 - name: Loudoun Credit Union
   link: http://loudouncu.com/
