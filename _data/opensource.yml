@@ -1,0 +1,15 @@
+- name: colornerd
+  link: https://jpederson.com/colornerd/
+  image: colornerd.png
+  
+- name: Accrue.js
+  link: https://jpederson.com/Accrue.js/
+  image: accrue.png
+
+- name: Squirrel.js
+  link: https://jpederson.com/Squirrel.js/
+  image: squirrel.png
+
+- name: Creep.js
+  link: https://jpederson.com/Creep.js/
+  image: creep.png

@@ -5,101 +5,116 @@ title: Web Design & Development, Madison, WI
 {% include header.html %}
 
 	<header class="home">
-		<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-home.png" class="logo"></a>
-	</header>
+		<h1><a href="{{ site.baseurl }}/">jpederson</a></h1>
+	</header> 
 	
 	<main>
-
-		<div class="seventy">
-
+		
+		<div class="bg-purple-dark">
 			<article class="intro wrap">
 
-				<h4 class="center">Hi there!</h4>
+				<h2 class="center">hi there!</h2>
 			
 				<p class="lead">My name is James - I build things on the web for great companies, organizations, and people. I love what I do.</p>
 
 				<p>As a freelance web developer in Madison over the past 10 years, I've had the opportunity to work with some really great people to develop all sorts of interesting things.</p>
 				
 			</article>
-
-			<article class="skills wrap group">
-
-				<h4 class="center">What I Do</h4>
-
-				<div class="half first">
-					<p><strong>Frontend Web Design</strong><br>
-						I build simple, beautiful websites that work on the widest range of devices, load quickly, and perform above expectations.</p>
-				</div>
-
-				<div class="half">
-					<p><strong>User Experience Design</strong><br>
-						Throughout the process of building every site, I strive to build intuitive, simple interfaces that your visitors will love.</p>
-				</div>
-
-				<div class="half first">
-					<p><strong>Accessibility</strong><br>
-						Your content is the most important part of your site, and it deserves to be legible and accessible by any device or user.</p>
-				</div>
-
-				<div class="half">
-					<p><strong>Linux Server Administration</strong><br>
-						Need a complex server configuration to serve your content? I've configured and launched several production servers into the cloud.</p>
-				</div>
-
-			</article>
-
 		</div>
 
-		<div class="thirty">
+		<article class="skills group wrap">
 
-			<article class="connect wrap group">
+			<h2 class="center">what i do</h2>
 
-				<h4 class="center">Connect With Me</h4>
+			<div class="half first">
+				<p><strong>Frontend Web Design</strong><br>
+					I build simple, beautiful websites that work on the widest range of devices, load quickly, and perform above expectations.</p>
+			</div>
+
+			<div class="half">
+				<p><strong>User Experience Design</strong><br>
+					Throughout the process of building every site, I strive to build intuitive, simple interfaces that your visitors will love.</p>
+			</div>
+
+			<div class="half first">
+				<p><strong>Accessibility</strong><br>
+					Your content is the most important part of your site, and it deserves to be legible and accessible by any device or user.</p>
+			</div>
+
+			<div class="half">
+				<p><strong>Linux Server Administration</strong><br>
+					Need a complex server configuration to serve your content? I've configured and launched several production servers into the cloud.</p>
+			</div>
+
+		</article>
+
+		<div class="bg-purple-dark">
+			<article class="connect group wrap">
+
+				<h2 class="center">get in touch</h2>
 				<p class="center">
 					<a href="{{ site.social_twitter }}"><img src="img/icon-twitter.png" alt=""></a>
 					<a href="{{ site.social_github }}"><img src="img/icon-github.png" alt=""></a>
 					<a href="{{ site.social_facebook }}"><img src="img/icon-facebook.png" alt=""></a>
 					<a href="{{ site.social_linkedin }}"><img src="img/icon-linkedin.png" alt=""></a>
-					<a href="{{ site.social_google }}"><img src="img/icon-google.png" alt=""></a>
-					<a href="/blog.rss"><img src="img/icon-rss.png" alt=""></a>
 					<a href="mailto:{{ site.email }}"><img src="img/icon-email.png" alt=""></a>
 				</p>
 
 			</article>
-
-			<article class="posts wrap">
-			
-				<h4 class="center">Things I Write</h4>
-
-				{% for item in site.posts limit:10 %}
-				<div class="entry row-{% increment post_count %}">
-					<p><a class="item" href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.title }}</strong></a><br>
-						<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}<br></span>
-						<span class="date quiet">{{ item.date | date: "%B %-d, %Y" }}</span></p>
-				</div>
-				{% endfor %}
-			
-			</article>
-			
 		</div>
 
-	</main>
+		<article class="group wrap">
 
-	<div class="work group">
+			<h2 class="center">open source</h2>
+			<p>I love working in the open for the vast majority of my clients - and I especially enjoy working on open source projects to release to the community. Here are some of my favorite open source projects - I manage dozens more projects on <a href="https://github.com/jpederson" target="_blank">Github</a> with multiple organizations, and, among others, these personal projects.</p>
+		
+		</article>
+
+		<article class="work group">
+				
+			{% for client in site.data.opensource %}
+			<a href="{{ client.link }}" target="_blank"><img src="/img/portfolio/{{ client.image }}" alt="{{ client.name }}"></a>
+			{% endfor %}
+
+		</article>
+
+		<article class="group wrap">
+
+			<h2 class="center">client work</h2>
+			<p>Here's a collection of sites I've developed - building out designs created by designers like <a href="http://giraphcu.com" target="_blank">gira{ph} creative</a>.</p>
+
+		</article>
 			
-		{% for client in site.data.clients %}
-		<a href="{{ client.link }}" target="_blank"><img src="/img/portfolio/{{ client.image }}" alt="{{ client.name }}"></a>
-		{% endfor %}
+		<article class="work group">
+				
+			{% for client in site.data.clients %}
+			<a href="{{ client.link }}" target="_blank"><img src="/img/portfolio/{{ client.image }}" alt="{{ client.name }}"></a>
+			{% endfor %}
 
-	</div>
+		</article>
 
-	<!--
+		<!--
+		<article class="posts wrap">
+		
+			<h4 class="center">Things I Write</h4>
 
-	<div class="clients wrap">
-		<h4 class="center">Want to see more?</h4>
-		<p>To see more of my work, follow me on <a href="{{ site.social_twitter }}">Twitter</a> to get updates, or read the blog to find case studies and learn about how I work.</p>
-	</div>
-	
-	-->
+			{% for item in site.posts limit:10 %}
+			<div class="entry row-{% increment post_count %}">
+				<p><a class="item" href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.title }}</strong></a><br>
+					<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}<br></span>
+					<span class="date quiet">{{ item.date | date: "%B %-d, %Y" }}</span></p>
+			</div>
+			{% endfor %}
+		
+		</article>
+		-->
+
+		<footer class="colophon wrap">
+				
+			<p>Copyright &copy; {{ 'now' | date: "%Y" }} James Pederson. All rights reserved.
+
+		</footer>
+
+	</main>
 	
 {% include footer.html %}

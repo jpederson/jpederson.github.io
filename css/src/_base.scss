@@ -1,9 +1,10 @@
 
 body {
 	@include font-reading;
-	color: darken( $grey, 10% );
+	color: white;
 	font-size: 17px;
 	line-height: 28px;
+	background-color: $purple;
 
 	@include respond-to( 768px ) {
 		font-size: 20px;
@@ -12,11 +13,14 @@ body {
 }
 
 a {
-	color: $purple;
+	color: white;
+	border-bottom: 1px dotted white;
 	transition: opacity 400ms ease-in-out;
+	opacity: .6;
+	text-decoration: none;
 
 	&:hover {
-		color: lighten( $purple, 10% );
+		opacity: 1;
 	}
 
 	&.meta {

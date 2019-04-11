@@ -6,25 +6,15 @@
 }
 
 
+.bg-purple { background-color: $purple; }
+.bg-purple-dark { background-color: $purple-dark; }
+
+
 // header styles
 header {
 	position: relative;
-	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
-	background: $grey url(../img/bg-post.jpg);
 	@include clearfix;
-
-	img.logo {
-		position: absolute;
-		z-index: 10;
-		top: 0;
-		left: 50%;
-		margin-left: -75px;
-
-		@include respond-to( 1024px ) {
-			left: 0;
-			margin-left: 0;
-		}
-	}
+	text-align: center;
 
 	&.post {
 		background-position: center center;
@@ -34,28 +24,37 @@ header {
 		padding-top: 100px;
 		@include respond-to( 768px ) { padding-top: 110px; }
 		@include respond-to( 1024px ) { padding-top: 160px; }
-
-		img.logo {
-			left: 0;
-			margin-left: 0;
-		}
 	}
 
 	&.home {
 		background: none;
-
-		margin-bottom: 120px;
-		@include respond-to( 1024px ) { margin-bottom: 40px; }
 	}
 
 	h1 {
 		max-width: 700px;
-		margin: 0 auto;
+		margin: 50px auto;
 		z-index: 3;
 		color: white;
-		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.7 );
+		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.4 );
 		padding: 0;
-		@include font-headline;
+		@include font-reading;
+
+		a {
+			border-bottom: 0;
+			opacity: .7;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		@include respond-to( 768px ) {
+			font-size: 60px;
+		}
+
+		@include respond-to( 1024px ) {
+			font-size: 80px;
+		}
 	}
 
 	h3 {
@@ -74,6 +73,7 @@ header {
 	max-width: 12%;
 	display: inline;
 	display: inline-block;
+	border-bottom: 0;
 	
 	&:hover {
 		opacity: 1;
@@ -103,14 +103,13 @@ p.meta {
 
 			.excerpt { display: block; }
 		}
-
 	}
 }
 
 
 .work {
-	margin: 40px 0 0;
-	background: url(/img/bg-lightcross.png);
+	margin: 20px 0 0;
+	background: darken( $purple, 20% );
 	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
 	@include clearfix;
 
@@ -118,49 +117,22 @@ p.meta {
 		float: left;
 		line-height: 10pt;
 		width: 100%;
+		border-bottom: 0;
 
 		@include respond-to( 500px ) { 
 			width: 50%; 
-			
-			&:nth-child(3), &:nth-child(5), &:nth-child(7), &:nth-child(9), &:nth-child(11), &:nth-child(13), &:nth-child(15), &:nth-child(17), &:nth-child(19), &:nth-child(21) {
-				clear: left;
-			}
 		}
 
 		@include respond-to( 768px ) { 
-			width: 33.3332%;
-
-			&:nth-child(3), &:nth-child(5), &:nth-child(7), &:nth-child(9), &:nth-child(11), &:nth-child(13), &:nth-child(15), &:nth-child(17), &:nth-child(19), &:nth-child(21), &:nth-child(23), &:nth-child(25), &:nth-child(27), &:nth-child(29) {
-				clear: none;
-			}
-
-			&:nth-child(4), &:nth-child(7), &:nth-child(11), &:nth-child(14), &:nth-child(17), &:nth-child(20), &:nth-child(23), &:nth-child(26), &:nth-child(29) {
-				clear: left;
-			}
+			width: 33.3333%;
 		}
 
 		@include respond-to( 1000px ) {
 			width: 25%;
-
-			&:nth-child(4), &:nth-child(7), &:nth-child(11), &:nth-child(14), &:nth-child(17), &:nth-child(20), &:nth-child(23), &:nth-child(26), &:nth-child(29) {
-				clear: none;
-			}
-
-			&:nth-child(5), &:nth-child(9), &:nth-child(13), &:nth-child(17), &:nth-child(21), &:nth-child(25), &:nth-child(29), &:nth-child(33), &:nth-child(37) {
-				clear: left;
-			}
 		}
 
 		@include respond-to( 1500px ) {
 			width: 20%;
-
-			&:nth-child(5), &:nth-child(9), &:nth-child(13), &:nth-child(17), &:nth-child(21), &:nth-child(25), &:nth-child(29), &:nth-child(33), &:nth-child(37) {
-				clear: none;
-			}
-
-			&:nth-child(6), &:nth-child(11), &:nth-child(17), &:nth-child(22), &:nth-child(27), &:nth-child(32), &:nth-child(37) {
-				clear: left;
-			}
 		}
 		
 		.no-touch & img {
@@ -180,4 +152,9 @@ p.meta {
 }
 
 
+.colophon {
+	opacity: .4;
+	font-size: .8em;
+	text-align: center;
+}
 

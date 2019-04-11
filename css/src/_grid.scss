@@ -17,21 +17,6 @@
 		float: left;
 		padding: 20px 15px;
 		text-align: center;
-
-	}
-
-	@include respond-to( 1024px ) {
-		width: auto;
-		float: none;
-		padding: 15px 0;
-		text-align: left;
-	}
-	
-	@include respond-to( 1200px ) {	
-		width: 50%;
-		float: left;
-		padding: 20px 15px;
-		text-align: center;
 	}
 }
 

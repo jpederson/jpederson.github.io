@@ -38,21 +38,9 @@
   link: http://ct3racing.com/
   image: ct3.png
 
-- name: Accrue.js
-  link: /Accrue.js/
-  image: accrue.png
-
-- name: MyCU.Rocks
-  link: http://mycu.rocks/
-  image: mycurocks.png
-
 - name: FAACU - See Your Score Soar
   link: http://seeyourscoresoar.com/
   image: faa-scoresoar.png
-
-- name: McKesson Credit Union
-  link: http://mckessoncu.com/
-  image: mckesson.png
 
 - name: High Country Mom
   link: http://highcountrymom.com/
@@ -61,7 +49,3 @@
 - name: Quit the Hit
   link: http://quitthehit.com/
   image: vacul-qth.png
-
-- name: Baylands Loan Challenge
-  link: http://baylandsloanchallenge.com/
-  image: baylandsloanchallenge.png
