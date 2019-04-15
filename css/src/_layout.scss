@@ -16,6 +16,10 @@ header {
 	@include clearfix;
 	text-align: center;
 
+	a {
+		border-bottom: 0;
+	}
+
 	&.post {
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -99,7 +103,7 @@ header {
 p.meta {
 	@include font-light;
 	font-size: 0.75em;
-	color: lighten( $grey, 20% );
+	color: $grey;
 	letter-spacing: 1px;
 }
 
@@ -107,17 +111,23 @@ p.meta {
 // post listing padding
 .posts {
 	.entry {
-		padding: 10px 0;
-		border-top: 1px solid lighten( $grey, 40% );
+		padding: 15px 0;
+		border-top: 1px solid rgba( white, .4 );
 		
-		.excerpt { display: none; }
+		@include respond-to( 768px ) {
+			padding: 25px 0;
+		}
 
 		&.row-0 {
 			border-top: 0;
-
-			.excerpt { display: block; }
 		}
 	}
+}
+
+
+.post {
+	background: white;
+	color: darken( $grey, 30% );
 }
 
 

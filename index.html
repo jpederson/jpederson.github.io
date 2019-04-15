@@ -103,12 +103,11 @@ title: Web Design & Development, Madison, WI
 
 		</article>
 
-		<!--
 		<article class="posts wrap">
 		
-			<h4 class="center">Things I Write</h4>
+			<h2 class="center">my blog</h2>
 
-			{% for item in site.posts limit:10 %}
+			{% for item in site.posts limit:5 %}
 			<div class="entry row-{% increment post_count %}">
 				<p><a class="item" href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.title }}</strong></a><br>
 					<span class="excerpt">{{ item.excerpt | remove: '<p>' | remove: '</p>' }}<br></span>
@@ -117,13 +116,12 @@ title: Web Design & Development, Madison, WI
 			{% endfor %}
 		
 		</article>
-		-->
 
-		<footer class="colophon wrap">
-				
-			<p>Copyright &copy; {{ 'now' | date: "%Y" }} James Pederson. All rights reserved.
-
-		</footer>
+		<div class="bg-purple-dark">
+			<footer class="colophon wrap">
+				<p>Copyright &copy; {{ 'now' | date: "%Y" }} James Pederson. All rights reserved.</p>
+			</footer>
+		</div>
 
 	</main>
 	

@@ -9,9 +9,21 @@
     </div>
   </header>
 
-  <article class="wrap">
-    {{content}}
-    <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} in {% for cat in page.categories limit:1 %}{{ cat | capitalize }}{% endfor %} by {{ page.author }}</p>
-  </article>
+  <main>
+    <article class="post">
+      <div class="wrap">
+        {{content}}
+        <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} by {{ page.author }}</p>
+      </div>
+    </article>
+
+
+    <div class="bg-purple-dark">
+      <footer class="colophon wrap">
+        <p>Copyright &copy; {{ 'now' | date: "%Y" }} James Pederson. All rights reserved.</p>
+      </footer>
+    </div>
+    
+  </main>
 
 {% include header.html %}
