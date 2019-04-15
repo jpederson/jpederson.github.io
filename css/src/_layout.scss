@@ -159,10 +159,10 @@ p.meta {
 	color: darken( $grey, 30% );
 
 	a {
-		color: darken( $grey, 50% );
+		color: $purple;
 
 		&:hover {
-			color: darken( $grey, 80% );
+			color: darken( $purple, 10% );
 		}
 	}
 }
