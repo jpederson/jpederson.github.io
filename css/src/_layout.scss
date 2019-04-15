@@ -25,6 +25,14 @@ header {
 		padding: 40px 20px 30px;
 	}
 
+	.post & {
+		padding: 20px;
+
+		@include respond-to( 768px ) {
+			padding: 20px;
+		}
+ 	}
+
 	a {
 		border-bottom: 0;
 	}
@@ -50,6 +58,7 @@ header {
 		a {
 			border-bottom: 0;
 			opacity: .7;
+			color: white;
 
 			&:hover {
 				opacity: 1;
@@ -63,6 +72,12 @@ header {
 		@include respond-to( 1024px ) {
 			font-size: 70px;
 		}
+
+		&.logo {
+			a {
+				color: white;
+			}
+		}
 	}
 
 	h3 {
@@ -70,34 +85,11 @@ header {
 		padding: 0;
 		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.7 );
 		opacity: .6;
-		@include font-light;
-	}
-
-	&.post {
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		padding-top: 20px;
-
-		@include respond-to( 768px ) {
-			padding-top: 60px;
-
-			h1 {
-				font-size: 40px;
-			}
-		}
-
-		@include respond-to( 1024px ) { 
-			padding-top: 100px; 
-
-			h1 {
-				font-size: 60px;
-			}
-		}
+		@include font;
 	}
 
 }
+
 
 
 .skills {
@@ -130,7 +122,7 @@ header {
 
 // meta information style
 p.meta {
-	@include font-light;
+	@include font;
 	font-size: 0.75em;
 	color: $grey;
 	letter-spacing: 1px;
@@ -155,15 +147,41 @@ p.meta {
 
 
 .post {
-	background: white;
-	color: darken( $grey, 30% );
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-	a {
-		color: darken( $purple, 10% );
-		@include font-bold;
+	header {
+		padding-top: 20px;
+		
+		@include respond-to( 768px ) {
+			padding-top: 60px;
 
-		&:hover {
-			color: darken( $purple, 20% );
+			h1 {
+				font-size: 40px;
+			}
+		}
+
+		@include respond-to( 1024px ) { 
+			padding-top: 100px; 
+
+			h1 {
+				font-size: 60px;
+			}
+		}
+	}
+
+	.post-content {
+		background-color: white;
+		color: darken( $grey, 30% );
+
+		a {
+			color: darken( $purple, 10% );
+			@include font-bold;
+
+			&:hover {
+				color: darken( $purple, 20% );
+			}
 		}
 	}
 }

@@ -12,7 +12,7 @@ Every web creator or project manager has been there. You need a site that's bigg
 
 More recently, there's been a resurgence of developers (myself included) favoring static site generators like [Jekyll](http://jekyllrb.com){:target="_blank"}, [Assemble.io](http://assemble.io){:target="_blank"}, or [Cabin](http://cabinjs.com){:target="_blank"}. These generators still separate content from presentation like all web systems should, but the content is actually stored in plain text files instead of a database. Then the generator comes through and processes all your files, outputting them to a directory that can serve your website.
 
-With Jekyll, you can even host your website for free on Github Pages where they'll build your site every time you commit to a repository. You can even edit the site directly on Github or use a tool like [prose.io](http://prose.io) for an intuitive editor that's geared specifically toward managing a Jekyll site through the Github APIs.
+With Jekyll, you can even host your website for free on Github Pages where they'll build your site every time you commit to a repository. You can even edit the site directly on Github or use a tool like [prose.io](http://prose.io){:target="_blank"} for an intuitive editor that's geared specifically toward managing a Jekyll site through the Github APIs.
 
 *****
 
