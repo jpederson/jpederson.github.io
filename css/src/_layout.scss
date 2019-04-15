@@ -25,23 +25,28 @@ header {
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		padding-top: 100px;
-		@include respond-to( 768px ) { padding-top: 110px; }
-		@include respond-to( 1024px ) { padding-top: 160px; }
+		padding-top: 20px;
+		@include respond-to( 768px ) { padding-top: 60px; }
+		@include respond-to( 1024px ) { padding-top: 100px; }
 	}
 
-	&.home {
-		background: none;
-	}
+	.wrap {
+		padding: 0 20px 20px;
+
+		@include respond-to( 500px ) {
+			padding: 20px 30px 40px;
+		}
+ 	}
 
 	h1 {
 		max-width: 700px;
-		margin: 50px auto;
+		margin: 0 auto 20px;
 		z-index: 3;
 		color: white;
 		text-shadow: 1px 1px 25px rgba( 0, 0, 0, 0.4 );
 		padding: 0;
 		@include font-reading;
+		font-size: 40px;
 
 		a {
 			border-bottom: 0;
@@ -53,11 +58,11 @@ header {
 		}
 
 		@include respond-to( 768px ) {
-			font-size: 60px;
+			font-size: 50px;
 		}
 
 		@include respond-to( 1024px ) {
-			font-size: 80px;
+			font-size: 60px;
 		}
 	}
 
