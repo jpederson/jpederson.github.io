@@ -1,22 +1,26 @@
-- name: League of Southeastern Credit Unions
-  link: http://lscu.coop/
-  image: lscu.png
+- name: Front Royal FCU
+  link: https://frontroyalfcu.org/
+  image: frontroyal.png
 
-- name: Northwestern Credit Union Foundation
-  link: https://nwcuf.org/
-  image: nwcuf.png
+- name: NWCUA
+  link: http://nwcua.org/
+  image: nwcua.png?v=1
 
 - name: Ripon College
   link: https://ripon.edu/
   image: ripon.png
   
-- name: Front Royal FCU
-  link: https://frontroyalfcu.org/
-  image: frontroyal.png
+- name: Northwestern Credit Union Foundation
+  link: https://nwcuf.org/
+  image: nwcuf.png
 
 - name: Leverage
   link: http://myleverage.com/
   image: leverage.png
+
+- name: League of Southeastern Credit Unions
+  link: http://lscu.coop/
+  image: lscu.png
 
 - name: Loudoun Credit Union
   link: http://loudouncu.com/
@@ -34,9 +38,9 @@
   link: http://nwcuastrategiclink.com/
   image: strategic.png
 
-- name: NWCUA
-  link: http://nwcua.org/
-  image: nwcua.png?v=1
+- name: Educational Community Alliance CU
+  link: https://www.educacu.com/
+  image: educacu.png
 
 - name: Member Loyalty Group
   link: https://memberloyaltygroup.com/
