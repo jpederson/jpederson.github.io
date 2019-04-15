@@ -15,6 +15,15 @@ header {
 	position: relative;
 	@include clearfix;
 	text-align: center;
+	padding: 20px;
+
+	@include respond-to( 768px ) {
+		padding: 30px 40px 20px;
+	}
+
+	@include respond-to( 768px ) {
+		padding: 40px 50px 30px;
+	}
 
 	a {
 		border-bottom: 0;
