@@ -7,7 +7,7 @@
   image: nwcua.png?v=1
 
 - name: Ripon College
-  link: https://ripon.edu/
+  link: https://www.ripon.edu/
   image: ripon.png
   
 - name: Northwestern Credit Union Foundation
@@ -19,11 +19,11 @@
   image: leverage.png
 
 - name: League of Southeastern Credit Unions
-  link: http://lscu.coop/
+  link: https://www.lscu.coop/
   image: lscu.png
 
 - name: Loudoun Credit Union
-  link: http://loudouncu.com/
+  link: https://loudouncu.com/
   image: loudoun.png
 
 - name: Giraph Creative
@@ -42,6 +42,10 @@
   link: https://www.educacu.com/
   image: educacu.png
 
+- name: Wisconsin Hemp Farmers and Manufacturers Association
+  link: https://wihfma.org/
+  image: wihfma.png
+
 - name: Member Loyalty Group
   link: https://memberloyaltygroup.com/
   image: mlg.png
@@ -57,7 +61,3 @@
 - name: High Country Mom
   link: http://highcountrymom.com/
   image: highcountrymom.png
-
-- name: Quit the Hit
-  link: http://quitthehit.com/
-  image: vacul-qth.png
