@@ -128,6 +128,14 @@ p.meta {
 .post {
 	background: white;
 	color: darken( $grey, 30% );
+
+	a {
+		color: darken( $grey, 50% );
+
+		&:hover {
+			color: darken( $grey, 80% );
+		}
+	}
 }
 
 
