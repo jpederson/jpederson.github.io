@@ -4,7 +4,7 @@ body {
 	color: white;
 	font-size: 17px;
 	line-height: 28px;
-	background-color: $purple;
+	background-color: $primary;
 
 	@include respond-to( 768px ) {
 		font-size: 20px;
@@ -102,7 +102,7 @@ h6 {
 hr {
 	height: 0;
 	border: 0;
-	border-bottom: 1px solid lighten( $purple, 30% );
+	border-bottom: 1px solid lighten( $primary, 30% );
 	margin: 25px 0;
 }
 

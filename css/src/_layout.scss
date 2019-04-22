@@ -6,8 +6,8 @@
 }
 
 
-.bg-purple { background-color: $purple; }
-.bg-purple-dark { background-color: $purple-dark; }
+.bg-purple { background-color: $primary; }
+.bg-purple-dark { background-color: $primary-dark; }
 
 
 // header styles
@@ -176,11 +176,11 @@ p.meta {
 		color: darken( $grey, 30% );
 
 		a {
-			color: darken( $purple, 10% );
+			color: darken( $primary, 10% );
 			@include font-bold;
 
 			&:hover {
-				color: darken( $purple, 20% );
+				color: darken( $primary, 20% );
 			}
 		}
 	}
@@ -189,7 +189,7 @@ p.meta {
 
 .work {
 	margin: 0 0 20px;
-	background: darken( $purple, 20% );
+	background: darken( $primary, 20% );
 	box-shadow: 0 0 30px rgba( 0, 0, 0, 0.3 );
 	@include clearfix;
 
