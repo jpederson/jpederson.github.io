@@ -17,3 +17,11 @@
 - name: Creep.js
   link: https://jpederson.com/Creep.js/
   image: creep.png?v=1
+
+- name: Photo Gallery
+  link: https://github.com/jpederson/photo-gallery
+  image: gallery.png
+
+- name: Directory Lister
+  link: https://github.com/jpederson/directory-lister
+  image: lister.png
