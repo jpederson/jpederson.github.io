@@ -73,6 +73,14 @@ header {
 			font-size: 70px;
 		}
 
+		@include respond-to( 1680px ) {
+			font-size: 100px;
+		}
+
+		@include respond-to( 2200px ) {
+			font-size: 150px;
+		}
+
 		&.logo {
 			a {
 				color: white;
@@ -213,6 +221,10 @@ p.meta {
 
 		@include respond-to( 1500px ) {
 			width: 20%;
+		}
+
+		img {
+			width: 100%;
 		}
 		
 		.no-touch & img {

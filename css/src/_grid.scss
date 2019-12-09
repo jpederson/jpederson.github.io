@@ -4,6 +4,8 @@
 	padding: 30px;
 	@include respond-to( 600px ) { padding: 40px 50px; }
 	@include respond-to( 840px ) { padding: 50px; }
+	@include respond-to( 1680px ) { max-width: 1000px; }
+	@include respond-to( 2200px ) { max-width: 1440px; }
 }
 
 
