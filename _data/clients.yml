@@ -30,10 +30,6 @@
   link: http://giraphcu.com/
   image: giraph.png
 
-- name: TwoScore
-  link: http://twoscore.biz/
-  image: twoscore.png
-
 - name: NWCUA Strategic Link
   link: http://nwcuastrategiclink.com/
   image: strategic.png
@@ -42,17 +38,9 @@
   link: https://www.educacu.com/
   image: educacu.png
 
-- name: Wisconsin Hemp Farmers and Manufacturers Association
-  link: https://wihfma.org/
-  image: wihfma.png
-
 - name: Member Loyalty Group
   link: https://memberloyaltygroup.com/
   image: mlg.png
-
-- name: CT3 Race Team
-  link: http://ct3racing.com/
-  image: ct3.png
 
 - name: FAACU - See Your Score Soar
   link: http://seeyourscoresoar.com/
