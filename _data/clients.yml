@@ -1,3 +1,11 @@
+- name: Library of Congress Credit Union
+  link: https://servingamericaslibrarycommunity.org/
+  image: loc.jpg
+
+- name: Local 804 Credit Union
+  link: https://cu804.org/
+  image: cu804.jpg
+
 - name: Front Royal FCU
   link: https://frontroyalfcu.org/
   image: frontroyal.png
@@ -13,10 +21,6 @@
 - name: Northwestern Credit Union Foundation
   link: https://nwcuf.org/
   image: nwcuf.png?v=1
-
-- name: Leverage
-  link: http://myleverage.com/
-  image: leverage.png
 
 - name: Loudoun Credit Union
   link: https://loudouncu.com/
