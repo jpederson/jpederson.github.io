@@ -2,19 +2,23 @@
 @mixin font-headline {
 	font-family: "Zilla Slab", Arial, sans-serif;
 	font-weight: 700;
+	font-display: swap;
 }
 
 @mixin font {
 	font-family: "Zilla Slab", Arial, sans-serif;
 	font-weight: 400;
+	font-display: swap;
 }
 
 @mixin font-bold {
 	font-family: "Zilla Slab", Arial, sans-serif;
 	font-weight: 700;
+	font-display: swap;
 }
 
 @mixin font-reading {
 	font-family: "Zilla Slab", Arial, sans-serif;
 	font-weight: 400;
+	font-display: swap;
 }
