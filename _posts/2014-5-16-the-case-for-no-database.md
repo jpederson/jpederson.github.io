@@ -3,7 +3,7 @@ layout: post
 categories: Code
 title: The Case for No Database
 subtitle: "Why you shouldn't overcomplicate your website."
-photo: /img/boards.jpg
+photo: /img/boards.webp
 author: James Pederson
 published: true
 ---
