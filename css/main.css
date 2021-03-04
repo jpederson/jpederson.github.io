@@ -371,6 +371,10 @@ header {
     background-image: url(../img/icon-instagram.webp);
     background-repeat: no-repeat;
     background-size: contain; }
+  .vcard a.linkedin {
+    background-image: url(../img/icon-linkedin.webp);
+    background-repeat: no-repeat;
+    background-size: contain; }
   .vcard a.github {
     background-image: url(../img/icon-github.webp);
     background-repeat: no-repeat;
