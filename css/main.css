@@ -363,6 +363,10 @@ header {
     background-image: url(../img/icon-email.webp);
     background-repeat: no-repeat;
     background-size: contain; }
+  .vcard a.web {
+    background-image: url(../img/icon-web.webp);
+    background-repeat: no-repeat;
+    background-size: contain; }
   .vcard a.twitter {
     background-image: url(../img/icon-twitter.webp);
     background-repeat: no-repeat;
