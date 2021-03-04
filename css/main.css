@@ -336,7 +336,7 @@ header {
 .vcard .address {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.4); }
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4); }
 
 .vcard a {
   display: block;
