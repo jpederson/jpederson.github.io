@@ -7,12 +7,12 @@
     },
     "devDependencies": {
         "grunt": "*",
-        "grunt-autoprefixer": "*",
         "grunt-contrib-imagemin": "*",
-        "grunt-contrib-sass": "*",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-watch": "*",
+        "grunt-sass": "*",
         "grunt-shell": "*",
-        "matchdep": "*"
+        "matchdep": "*",
+        "node-sass": "*"
     }
 }

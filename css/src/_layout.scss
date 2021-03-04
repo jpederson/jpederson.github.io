@@ -128,6 +128,75 @@ header {
 }
 
 
+// vcard
+.vcard {
+	&.wrap {
+		max-width: 600px;
+		padding: 20px;
+	}
+
+	.address {
+		padding-left: 10px;
+
+		@include respond-to( 768px ) {
+			padding-left: 20px;
+		}
+	}
+
+	a {
+		display: block;
+		margin-top: 10px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		padding: 5px 10px 5px 60px;
+		font-size: 1.3em;
+		line-height: 1.3em;
+		border: none;
+
+		@include respond-to( 768px ) {
+			margin-top: 30px;
+			padding: 10px 20px 10px 100px;
+		}
+
+		&.phone {
+			background-image: url(../img/icon-phone.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		&.email {
+			background-image: url(../img/icon-email.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		&.twitter {
+			background-image: url(../img/icon-twitter.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		&.facebook {
+			background-image: url(../img/icon-facebook.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		&.instagram {
+			background-image: url(../img/icon-instagram.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		&.github {
+			background-image: url(../img/icon-github.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+
+
 // meta information style
 p.meta {
 	@include font;

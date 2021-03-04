@@ -1,4 +1,6 @@
 
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
 
 	// load all grunt tasks
@@ -17,30 +19,38 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: ['css/src/*.scss'],
-				tasks: ['sass','autoprefixer','shell'],
+				tasks: ['sass','shell'],
 				options: {
 					spawn: false
 				}
 			},
             html: {
-                files: ['{*,_posts/*,_data/*,_drafts/*,img/*}.{html,md,yml,rss}'],
+                files: ['{*,connect/*,_posts/*,_data/*,_drafts/*,img/*,}.{html,md,yml,rss}'],
                 tasks: ['shell']
             }
 		},
 
 
 		// we use the Sass
-		sass: {
-			dist: {
-				options: {
-					// nested, compact, compressed, expanded
-					style: 'compressed'
-				},
-				files: {
-					'css/src/main-unprefixed.css': 'css/src/main.scss',
-				}
-			}
-		},
+        sass: {
+            options: {
+                implementation: sass,
+                'output-style': 'compact'
+            },
+            dist: {
+                files: {
+                    'css/main.css': 'css/src/main.scss'
+                }
+            },
+            sourceMapSimple: {
+                options: {
+                    sourceMap: true
+                },
+                files: {
+                    'css/main.map.css': 'css/src/main.scss'
+                }
+            },        
+        },
 
 
 		// uglify to concat, minify, and make source maps
@@ -53,14 +63,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-
-		// auto-prefix our css3 properties.
-		autoprefixer: {
-			files: {
-				dest: 'css/main.css',
-				src: 'css/src/main-unprefixed.css'
-			}
-		},
 
 
 		// build the Jekyll site.
@@ -89,7 +91,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['watch']);
 
 	// a build task just in case we want to
-	grunt.registerTask('build', ['sass','autoprefixer','uglify','imagemin','shell']);
+	grunt.registerTask('build', ['sass','uglify','imagemin','shell']);
 
 };
 
