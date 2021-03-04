@@ -162,6 +162,12 @@ header {
 			background-size: contain;
 		}
 
+		&.sms {
+			background-image: url(../img/icon-sms.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
 		&.email {
 			background-image: url(../img/icon-email.webp);
 			background-repeat: no-repeat;

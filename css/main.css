@@ -355,6 +355,10 @@ header {
     background-image: url(../img/icon-phone.webp);
     background-repeat: no-repeat;
     background-size: contain; }
+  .vcard a.sms {
+    background-image: url(../img/icon-sms.webp);
+    background-repeat: no-repeat;
+    background-size: contain; }
   .vcard a.email {
     background-image: url(../img/icon-email.webp);
     background-repeat: no-repeat;
