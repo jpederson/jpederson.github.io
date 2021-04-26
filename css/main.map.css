@@ -371,6 +371,10 @@ header {
     background-image: url(../img/icon-twitter.webp);
     background-repeat: no-repeat;
     background-size: contain; }
+  .vcard a.twitch {
+    background-image: url(../img/icon-twitch.webp);
+    background-repeat: no-repeat;
+    background-size: contain; }
   .vcard a.facebook {
     background-image: url(../img/icon-facebook.webp);
     background-repeat: no-repeat;

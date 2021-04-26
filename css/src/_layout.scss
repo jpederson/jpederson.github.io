@@ -186,6 +186,12 @@ header {
 			background-size: contain;
 		}
 
+		&.twitch {
+			background-image: url(../img/icon-twitch.webp);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
 		&.facebook {
 			background-image: url(../img/icon-facebook.webp);
 			background-repeat: no-repeat;
