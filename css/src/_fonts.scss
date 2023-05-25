@@ -1,17 +1,27 @@
 
-@import url(//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300italic,600italic,800italic,300,800,600);
+@import url(https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,700,700i&font-display=swap);
+
 
 @mixin font-headline {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 800;
+	font-family: "Zilla Slab", Arial, sans-serif;
+	font-weight: 700;
+	font-display: swap;
 }
 
-@mixin font-light {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
+@mixin font {
+	font-family: "Zilla Slab", Arial, sans-serif;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@mixin font-bold {
+	font-family: "Zilla Slab", Arial, sans-serif;
+	font-weight: 700;
+	font-display: swap;
 }
 
 @mixin font-reading {
-	font-family: "Lora", "Georgia", serif;
+	font-family: "Zilla Slab", Arial, sans-serif;
 	font-weight: 400;
+	font-display: swap;
 }

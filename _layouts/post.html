@@ -1,7 +1,8 @@
 {% include header.html %}
-  
-  <header class="post" {% if page.photo %} style="background-image: url({{ site.baseurl }}{{ page.photo }});"{% endif %}>
-    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-post.png" class="logo"></a>
+
+<main class="post">
+  <header {% if page.photo %} style="background-image: url({{ site.baseurl }}{{ page.photo }});"{% endif %}>
+    <h1 class="logo"><a href="{{ site.baseurl }}/"><img src="/img/logo.webp" /></a></h1>
     
     <div class="wrap">
       <h1 class="title">{{ page.title }}</a></h1>
@@ -9,9 +10,20 @@
     </div>
   </header>
 
-  <article class="wrap">
-    {{content}}
-    <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} in {% for cat in page.categories limit:1 %}{{ cat | capitalize }}{% endfor %} by {{ page.author }}</p>
+  <article class="post-content">
+    <div class="wrap">
+      {{content}}
+      <p class="meta">Posted on {{ page.date | date:"%B %-d, %Y" }} by {{ page.author }}</p>
+    </div>
   </article>
+
+
+  <div class="bg-purple-dark">
+    <footer class="colophon wrap">
+      <p>Copyright &copy; {{ 'now' | date: "%Y" }} James Pederson. All rights reserved.</p>
+    </footer>
+  </div>
+    
+</main>
 
 {% include header.html %}

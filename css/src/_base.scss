@@ -1,22 +1,36 @@
 
 body {
 	@include font-reading;
-	color: darken( $grey, 10% );
+	color: white;
 	font-size: 17px;
 	line-height: 28px;
+	background-color: $primary;
 
 	@include respond-to( 768px ) {
 		font-size: 20px;
 		line-height: 34px;
 	}
+
+	@include respond-to( 1680px ) {
+		font-size: 26px;
+		line-height: 40px;
+	}
+
+	@include respond-to( 2200px ) {
+		font-size: 38px;
+		line-height: 52px;
+	}
 }
 
 a {
-	color: $purple;
+	color: white;
+	border-bottom: 1px dotted white;
 	transition: opacity 400ms ease-in-out;
+	opacity: .7;
+	text-decoration: none;
 
 	&:hover {
-		color: lighten( $purple, 10% );
+		opacity: 1;
 	}
 
 	&.meta {
@@ -50,7 +64,7 @@ em {
 }
 
 strong {
-	font-weight: 700;
+	font-weight: 900;
 }
 
 h1, h2, h3, h4 {
@@ -82,7 +96,7 @@ h4 {
 }
 
 h5, h6 {
-	@include font-light;
+	@include font;
 }
 
 h5 {
@@ -98,7 +112,7 @@ h6 {
 hr {
 	height: 0;
 	border: 0;
-	border-bottom: 1px solid lighten( $grey, 50% );
+	border-bottom: 1px solid lighten( $primary, 30% );
 	margin: 25px 0;
 }
 
@@ -133,3 +147,23 @@ article ol, article ul {
 ol {
 	list-style: decimal;
 }
+
+
+button, input[type=submit], .btn, a.btn, .grey a.btn, .blue a.btn, .blue-dark a.btn, .gold a.btn, .green a.btn, .green-dark a.btn {
+	padding: 10px 20px;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	border: 0;
+	background: white;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+	border: 0;
+	opacity: .7;
+	@include font-reading;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+

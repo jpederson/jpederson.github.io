@@ -12,11 +12,17 @@ exclude: [ 'src', 'README.md', 'node_modules', '.sass-cache', 'Gruntfile.js', 'p
 
 
 # social network links
-social_twitter: http://twitter.com/jamespederson
+social_twitter: https://twitter.com/jamespederson
 social_github: https://github.com/jpederson/
-social_facebook: https://facebook.com/james.pederson
-social_linkedin: http://www.linkedin.com/in/jamespederson/
-social_google: https://plus.google.com/u/0/+JamesPederson85/posts
+social_facebook: https://fb.me/james.pederson
+social_linkedin: https://www.linkedin.com/in/jamespederson/
+social_instagram: https://instagram.com/james.pederson
+social_twitch: https://twitch.tv/jamespederson
+
+
+# phone
+phone: '+16084437567'
+
 
 # admin email
 email: james@jpederson.com

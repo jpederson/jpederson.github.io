@@ -1,0 +1,3 @@
+[submodule "js/lib/photoswipe"]
+	path = js/lib/photoswipe
+	url = https://github.com/dimsemenov/PhotoSwipe.git

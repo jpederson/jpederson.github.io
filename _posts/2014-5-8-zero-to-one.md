@@ -3,7 +3,7 @@ layout: post
 categories: Inspiration
 title: Zero to One
 subtitle: And all the joys and pains in between.
-photo: /img/spark.jpg
+photo: /img/spark.webp
 author: James Pederson
 ---
 

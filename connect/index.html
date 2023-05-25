@@ -1,0 +1,29 @@
+---
+title: Web Design & Development, Madison, WI
+---
+
+{% include header.html %}
+
+	<main>
+		
+		<div class="vcard wrap">
+			<div class="address">
+				James Pederson<br>
+				306 Parkwood Lane #4<br>
+				Madison, WI 53714
+			</div>
+			<a href="tel:{{ site.phone }}" class="phone">call: 608.443.7567</a>
+			<a href="sms:{{ site.phone }}" class="sms">text: 608.443.7567</a>
+			<a href="mailto:{{ site.email }}" class="email">james@jpederson.com</a>
+			<a href="/" class="web" target="_blank">jpederson.com</a>
+			<a href="{{ site.social_github }}" class="github" target="_blank">jpederson</a>
+			<a href="{{ site.social_facebook }}" class="facebook" target="_blank">james.pederson</a>
+			<a href="{{ site.social_instagram }}" class="instagram" target="_blank">james.pederson</a>
+			<a href="{{ site.social_linkedin }}" class="linkedin" target="_blank">jamespederson</a>
+			<a href="{{ site.social_twitter }}" class="twitter" target="_blank">jamespederson</a>
+			<a href="{{ site.social_twitch }}" class="twitch" target="_blank">jamespederson</a>
+		</div>
+
+	</main>
+	
+{% include footer.html %}

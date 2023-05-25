@@ -1,0 +1,27 @@
+- name: colornerd
+  link: https://jpederson.com/colornerd/
+  image: colornerd.webp
+  
+- name: colorvert
+  link: https://colorvert.com/
+  image: colorvert.webp
+  
+- name: Accrue.js
+  link: https://jpederson.com/Accrue.js/
+  image: accrue.webp
+
+- name: Squirrel.js
+  link: https://jpederson.com/Squirrel.js/
+  image: squirrel.webp
+
+- name: Creep.js
+  link: https://jpederson.com/Creep.js/
+  image: creep.webp
+
+- name: Photo Gallery
+  link: https://github.com/jpederson/photo-gallery
+  image: gallery.webp
+
+- name: Directory Lister
+  link: https://github.com/jpederson/directory-lister
+  image: lister.webp
