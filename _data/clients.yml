@@ -1,7 +1,3 @@
-- name: Library of Congress Credit Union
-  link: https://servingamericaslibrarycommunity.org/
-  image: loc.webp
-
 - name: Local 804 Credit Union
   link: https://cu804.org/
   image: cu804.webp
@@ -10,21 +6,21 @@
   link: https://frontroyalfcu.org/
   image: frontroyal.webp
 
-- name: NWCUA
+- name: GoWest Association
   link: http://nwcua.org/
-  image: nwcua.webp?v=1
+  image: gowestassociation.png
 
 - name: Ripon College
   link: https://www.ripon.edu/
-  image: ripon.webp
-  
-- name: Northwestern Credit Union Foundation
-  link: https://nwcuf.org/
-  image: nwcuf.webp?v=1
+  image: ripon.png
 
-- name: Loudoun Credit Union
-  link: https://loudouncu.com/
-  image: loudoun.webp
+- name: The College of Wooster
+  link: https://www.wooster.edu/
+  image: wooster.png
+  
+- name: GoWest Credit Union Foundation
+  link: https://nwcuf.org/
+  image: gowestfoundation.png
 
 - name: Giraph Creative
   link: http://giraphcu.com/
@@ -42,18 +38,6 @@
   link: http://wellnesshealthcareers.com/
   image: wellness.webp
 
-- name: NWCUA Strategic Link
-  link: http://nwcuastrategiclink.com/
-  image: strategic.webp
-
 - name: Educational Community Alliance CU
   link: https://www.educacu.com/
   image: educacu.webp
-
-- name: Member Loyalty Group
-  link: https://memberloyaltygroup.com/
-  image: mlg.webp
-
-- name: High Country Mom
-  link: http://highcountrymom.com/
-  image: highcountrymom.webp

@@ -10,9 +10,8 @@
         "grunt-contrib-imagemin": "*",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-watch": "*",
-        "grunt-sass": "*",
+        "grunt-contrib-sass": "*",
         "grunt-shell": "*",
-        "matchdep": "*",
-        "node-sass": "*"
+        "matchdep": "*"
     }
 }
